@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Writing Work From Home | Apply Now</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#172033;
+    line-height:1.6;
+}
+
+.container{
+    width:92%;
+    max-width:1050px;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    background:#ffffff;
+    padding:15px 0;
+    border-bottom:1px solid #e7eaf0;
+}
+
+.header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:800;
+    color:#1769ff;
+}
+
+.header-btn{
+    background:#1769ff;
+    color:white;
+    padding:10px 17px;
+    border-radius:25px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    padding:45px 0 35px;
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+}
+
+.hero-box{
+    text-align:center;
+    max-width:750px;
+    margin:auto;
+}
+
+.badge{
+    display:inline-block;
+    background:#e7f0ff;
+    color:#1769ff;
+    padding:7px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:16px;
+}
+
+.hero h1{
+    font-size:42px;
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#1769ff;
+}
+
+.hero p{
+    color:#5f6b7a;
+    font-size:17px;
+    margin-bottom:25px;
+}
+
+.main-btn{
+    display:inline-block;
+    background:#1769ff;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:bold;
+    box-shadow:0 8px 22px rgba(23,105,255,.25);
+}
+
+.small-note{
+    font-size:12px;
+    color:#7a8493;
+    margin-top:12px;
+}
+
+/* INFO CARDS */
+.section{
+    padding:45px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.section-title h2{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#6b7280;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:14px;
+    border:1px solid #e7eaf0;
+    box-shadow:0 5px 18px rgba(20,40,80,.05);
+}
+
+.icon{
+    width:45px;
+    height:45px;
+    background:#eaf2ff;
+    color:#1769ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+.card p{
+    color:#687386;
+    font-size:14px;
+}
+
+/* WORK */
+.work-box{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    border:1px solid #e5e9f0;
+}
+
+.work-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.work-item{
+    padding:17px;
+    background:#f7f9fc;
+    border-radius:10px;
+}
+
+.work-item strong{
+    display:block;
+    margin-bottom:4px;
+}
+
+.work-item span{
+    color:#697586;
+    font-size:14px;
+}
+
+/* STEPS */
+.steps{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.step{
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    text-align:center;
+    border:1px solid #e5e9f0;
+}
+
+.step-number{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#1769ff;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 15px;
+    font-weight:bold;
+}
+
+/* CTA */
+.cta{
+    padding:50px 20px;
+}
+
+.cta-box{
+    max-width:900px;
+    margin:auto;
+    background:#1769ff;
+    color:white;
+    text-align:center;
+    padding:45px 25px;
+    border-radius:20px;
+}
+
+.cta-box h2{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.cta-box p{
+    opacity:.9;
+    margin-bottom:22px;
+}
+
+.telegram-btn{
+    display:inline-block;
+    background:white;
+    color:#1769ff;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FAQ */
+.faq{
+    background:white;
+    border:1px solid #e5e9f0;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:12px;
+}
+
+.faq h3{
+    font-size:16px;
+    margin-bottom:7px;
+}
+
+.faq p{
+    color:#687386;
+    font-size:14px;
+}
+
+/* FOOTER */
+footer{
+    background:#101828;
+    color:#aeb7c5;
+    padding:30px 15px;
+    text-align:center;
+    font-size:13px;
+}
+
+footer strong{
+    color:white;
+}
+
+.disclaimer{
+    max-width:800px;
+    margin:10px auto 0;
+    font-size:11px;
+    color:#7f8b9c;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    .hero{
+        padding:35px 0;
+    }
+
+    .hero h1{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .cards,
+    .steps,
+    .work-list{
+        grid-template-columns:1fr;
+    }
+
+    .section{
+        padding:35px 0;
+    }
+
+    .section-title h2{
+        font-size:25px;
+    }
+
+    .header-btn{
+        padding:8px 12px;
+        font-size:12px;
+    }
+
+    .logo{
+        font-size:19px;
+    }
+
+    .cta-box h2{
+        font-size:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container header-inner">
+        <div class="logo">WriteWork</div>
+
+        <!-- TELEGRAM LINK CHANGE HERE -->
+        <a href="https://t.me/YOUR_TELEGRAM_USERNAME"
+           class="header-btn">
+           Apply Now
+        </a>
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-box">
+
+        <div class="badge">
+            ✍️ WRITING WORK FROM HOME
+        </div>
+
+        <h1>
+            Explore <span>Writing Work</span><br>
+            From Home
+        </h1>
+
+        <p>
+            Looking for flexible writing opportunities from home?
+            Get information about available writing tasks, requirements
+            and the application process.
+        </p>
+
+        <!-- TELEGRAM LINK CHANGE HERE -->
+        <a href="https://t.me/YOUR_TELEGRAM_USERNAME"
+           class="main-btn">
+           ✈️ Get Work Details on Telegram
+        </a>
+
+        <div class="small-note">
+            No guaranteed income. Opportunities and work availability may vary.
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Why Consider Writing Work?</h2>
+            <p>Flexible work opportunities for eligible applicants</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🏠</div>
+                <h3>Work From Home</h3>
+                <p>
+                    Complete suitable writing assignments remotely
+                    using your phone or computer.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⏰</div>
+                <h3>Flexible Schedule</h3>
+                <p>
+                    Depending on the assignment, work can be organised
+                    around your available time.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">✍️</div>
+                <h3>Writing Tasks</h3>
+                <p>
+                    Tasks may include content writing, basic typing,
+                    editing or other writing-related work.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- WORK DETAILS -->
+<section class="section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>What Type of Work?</h2>
+            <p>Examples of writing-related assignments</p>
+        </div>
+
+        <div class="work-box">
+
+            <div class="work-list">
+
+                <div class="work-item">
+                    <strong>📝 Content Writing</strong>
+                    <span>Basic articles and informational content.</span>
+                </div>
+
+                <div class="work-item">
+                    <strong>⌨️ Typing Work</strong>
+                    <span>Typing and formatting assigned content.</span>
+                </div>
+
+                <div class="work-item">
+                    <strong>🔎 Content Review</strong>
+                    <span>Reviewing text for basic errors and formatting.</span>
+                </div>
+
+                <div class="work-item">
+                    <strong>📄 Document Work</strong>
+                    <span>Simple writing and document-related assignments.</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section class="section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>How It Works</h2>
+            <p>Simple application process</p>
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Get Details</h3>
+                <p>
+                    Join the Telegram channel to view current
+                    opportunity information.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Check Requirements</h3>
+                <p>
+                    Review the task details and eligibility requirements
+                    before applying.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Apply</h3>
+                <p>
+                    Follow the stated application process for the
+                    available opportunity.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+    <div class="cta-box">
+
+        <h2>Want To Know More?</h2>
+
+        <p>
+            Get the latest information about available writing
+            opportunities and application details.
+        </p>
+
+        <!-- TELEGRAM LINK CHANGE HERE -->
+        <a href="https://t.me/YOUR_TELEGRAM_USERNAME"
+           class="telegram-btn">
+           ✈️ Join Telegram
+        </a>
+
+    </div>
+</section>
+
+
+<!-- FAQ -->
+<section class="section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq">
+            <h3>Do I need previous writing experience?</h3>
+            <p>
+                Requirements can vary depending on the specific assignment.
+                Check the opportunity details before applying.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h3>Can I work from my phone?</h3>
+            <p>
+                Some assignments may be possible using a smartphone,
+                while others may require a computer.
+            </p>
+        </div>
+
+        <div class="faq">
+            <h3>Is income guaranteed?</h3>
+            <p>
+                No. Earnings depend on the availability of work,
+                assignment terms, eligibility and individual performance.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <strong>WriteWork</strong>
+
+    <div>
+        Writing Work From Home Opportunities
+    </div>
+
+    <div class="disclaimer">
+        This page provides information about writing-related work
+        opportunities. Availability, eligibility, payment terms and
+        workload may vary by assignment. No employment, income or
+        earnings guarantee is made.
+    </div>
+
+    <br>
+
+    <div>
+        © 2026 WriteWork. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>
